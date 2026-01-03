@@ -1,0 +1,79 @@
+.header {
+  padding: 120px 100px;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* Typography */
+.hello {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.tagline {
+  font-size: 2rem;
+  line-height: 1.4;
+  max-width: 900px;
+  color: #e7e7e7; /* gray-600 */
+}
+
+.name {
+  font-weight: 600;
+  color: #e7e7e7; /* gray-900 */
+}
+
+.contact {
+  font-size: 1.125rem;
+  color: #e7e7e7;
+}
+
+/* Links */
+.link {
+  color: #2563eb; /* blue-600 */
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+/* Emoji animation */
+.wave {
+  display: inline-block;
+  transform-origin: 70% 70%;
+  animation: wave 2.5s infinite;
+}
+
+/* Animation */
+@keyframes wave {
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(14deg); }
+  20% { transform: rotate(-8deg); }
+  30% { transform: rotate(14deg); }
+  40% { transform: rotate(-4deg); }
+  50% { transform: rotate(10deg); }
+  60% { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header {
+    padding: 80px 24px;
+  }
+
+  .hello {
+    font-size: 2.25rem;
+  }
+
+  .tagline {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,73 @@
+.experience {
+  padding: 160px 100px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 40px;
+}
+
+.label {
+  color: #3b82f6;
+  font-size: 0.8rem;
+  letter-spacing: 0.15em;
+  font-weight: 600;
+}
+
+/* LIST */
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.left {
+  max-width: 600px;
+}
+
+.company {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 4px;
+}
+
+.role {
+  font-size: 0.95rem;
+  color: #94a3b8;
+}
+
+.time {
+  font-size: 0.85rem;
+  color: #94a3b8;
+  white-space: nowrap;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .experience {
+    padding: 120px 40px;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .item {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .time {
+    font-size: 0.8rem;
+  }
+}
