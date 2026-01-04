@@ -6,7 +6,9 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
-  trailingSlash: true
+  trailingSlash: true,
+  basePath: '/about-teams', 
+  assetPrefix: '/about-teams'
 };
 
 export default nextConfig;
